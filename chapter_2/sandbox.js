@@ -367,15 +367,58 @@ const password = 'password1234';
 
 
 
-const bill = (products, tax) => {
-  let total = 0;
-  for(let i = 0; i < products.length; i++) {
-    total += products[i] + products[i] * tax;
-  }
-  return total;
-};
+// const bill = (products, tax) => {
+//   let total = 0;
+//   for(let i = 0; i < products.length; i++) {
+//     total += products[i] + products[i] * tax;
+//   }
+//   return total;
+// };
 
-console.log(bill([10,15,30], 0.2));
+// console.log(bill([10,15,30], 0.2));
+
+
+// callback & foreach
+
+// const myFunc = (callbackFunc) => {
+//   let value = 50;
+//   callbackFunc(value);
+// };
+
+// myFunc(value => {
+//   console.log(value);
+// });
+// myFunc(function(value){
+  
+// });
+
+
+
+// let people = ['eddie', 'russel', 'david', 'nadim', 'rajiv'];
+
+// people.forEach(function(person){
+//   // console.log('something');
+//   console.log(person);
+// });
+
+// arrow function style
+// people.forEach((person, index) => {
+//   console.log(index, person);
+// });
+
+
+// const logPerson = (person, index) => {
+//   console.log(`${index} - hello ${person}`);
+// }
+// people.forEach(logPerson);
+
+
+
+
+
+
+
+
 
 
 
