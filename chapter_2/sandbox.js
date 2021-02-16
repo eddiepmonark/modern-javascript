@@ -412,13 +412,22 @@ const password = 'password1234';
 // }
 // people.forEach(logPerson);
 
+const ul = document.querySelector('.people');
+
+const people = ['eddie', 'russel', 'david', 'nadim', 'rajiv'];
 
 
+let html = ``;
 
+people.forEach(person => {
+  // people.forEach(function (person) {
+  // create html template
+  html += `<li style="color: cyan">${person}</li>`;
+})
 
+console.log(html);
 
-
-
+ul.innerHTML = html;
 
 
 
