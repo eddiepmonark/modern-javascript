@@ -327,12 +327,60 @@ const password = 'password1234';
 // }
 
 
+// arguments & parameters (default values)
+// const speak = function(name = 'eddie', time = 'night'){
+//   console.log(`good ${time} ${name}`);
+// };
 
-const speak = function(name){
-  console.log(`'good day ${name}'`);
+// speak('mario', 'morning');
+// speak();
+
+// OLD regular function
+// const calcArea = function(radius) {
+//   // below are the same
+//   // method 1
+//   // let area = 3.14 * radius**2;
+//   // return area;
+//   // method 2
+//   return 3.14 * radius**2;
+//   // console.log(area);
+// }
+
+// NEW arrow function
+// const calcArea = radius => {
+  // WORKS WITH ONLY ONE PARAMETER or only () with no parameters
+// const calcArea = (radius) => {
+// };
+
+// short version
+// const calcArea = radius => 3.14 * radius**2;
+
+// const a = calcArea(5);
+// console.log('area is: ', a);
+
+
+// const greet = () => 'hello, world';
+// const result = greet();
+
+// console.log(result);
+
+
+
+
+const bill = (products, tax) => {
+  let total = 0;
+  for(let i = 0; i < products.length; i++) {
+    total += products[i] + products[i] * tax;
+  }
+  return total;
 };
 
-speak('mario');
+console.log(bill([10,15,30], 0.2));
+
+
+
+
+
 
 
 
