@@ -313,16 +313,26 @@ const password = 'password1234';
 
 
 
+// function expression
+// const speak = function(){
+//   console.log('good day!');
+// };
+
+// greet();
+// speak();
+
+// // function declaration (will run even if called before in the code - moves up to top of file)
+// function greet() {
+//   console.log('hello world');
+// }
 
 
 
+const speak = function(name){
+  console.log(`'good day ${name}'`);
+};
 
-
-
-
-
-
-
+speak('mario');
 
 
 
