@@ -412,22 +412,96 @@ const password = 'password1234';
 // }
 // people.forEach(logPerson);
 
-const ul = document.querySelector('.people');
+// const ul = document.querySelector('.people');
 
-const people = ['eddie', 'russel', 'david', 'nadim', 'rajiv'];
+// const people = ['eddie', 'russel', 'david', 'nadim', 'rajiv'];
 
 
-let html = ``;
+// let html = ``;
 
-people.forEach(person => {
-  // people.forEach(function (person) {
-  // create html template
-  html += `<li style="color: cyan">${person}</li>`;
-})
+// people.forEach(person => {
+//   // people.forEach(function (person) {
+//   // create html template
+//   html += `<li style="color: cyan">${person}</li>`;
+// })
 
-console.log(html);
+// console.log(html);
 
-ul.innerHTML = html;
+// ul.innerHTML = html;
+
+
+
+
+// OBJECTS
+
+// OBJECT literals
+
+// const blogs = [
+//   { title: 'adobe max videos', likes: 30 },
+//   { title: 'top 10 android apps', likes: 50 }
+// ];
+
+
+let user = {
+  name: 'eddie',
+  age: 37,
+  email: 'eddiep@monark.com',
+  location: 'vancouver',
+  blogs: [
+    { title: 'adobe max videos', likes: 30 },
+    { title: 'top 10 android apps', likes: 50 }
+  ],
+  login: function() {
+    console.log('the user logged in');
+  },
+  // same as above with less code and regular function
+  logout() {
+    console.log('the user logged out');
+  },
+  // using the this to target whatever is inside it you need to use regular functions not arrow functions
+  logBlogs: function () {
+    // this.blogs
+    // console.log(this.blogs);
+    console.log('this user has written the following blogs:');
+    this.blogs.forEach(blog => {
+      console.log(blog.title, blog.likes);
+    })
+  }
+};
+
+// console.log(user.name);
+// console.log(user['name']);
+// user['name'] = 'sarah';
+// console.log(user.name);
+
+// const key = 'location';
+
+// console.log(user[key]);
+
+// update property
+// user.age = 33;
+// console.log(user.age);
+
+
+user.logBlogs();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
