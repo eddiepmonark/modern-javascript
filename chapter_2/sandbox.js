@@ -442,32 +442,32 @@ const password = 'password1234';
 // ];
 
 
-let user = {
-  name: 'eddie',
-  age: 37,
-  email: 'eddiep@monark.com',
-  location: 'vancouver',
-  blogs: [
-    { title: 'adobe max videos', likes: 30 },
-    { title: 'top 10 android apps', likes: 50 }
-  ],
-  login: function() {
-    console.log('the user logged in');
-  },
-  // same as above with less code and regular function
-  logout() {
-    console.log('the user logged out');
-  },
-  // using the this to target whatever is inside it you need to use regular functions not arrow functions
-  logBlogs: function () {
-    // this.blogs
-    // console.log(this.blogs);
-    console.log('this user has written the following blogs:');
-    this.blogs.forEach(blog => {
-      console.log(blog.title, blog.likes);
-    })
-  }
-};
+// let user = {
+//   name: 'eddie',
+//   age: 37,
+//   email: 'eddiep@monark.com',
+//   location: 'vancouver',
+//   blogs: [
+//     { title: 'adobe max videos', likes: 30 },
+//     { title: 'top 10 android apps', likes: 50 }
+//   ],
+//   login: function() {
+//     console.log('the user logged in');
+//   },
+//   // same as above with less code and regular function
+//   logout() {
+//     console.log('the user logged out');
+//   },
+//   // using the this to target whatever is inside it you need to use regular functions not arrow functions
+//   logBlogs: function () {
+//     // this.blogs
+//     // console.log(this.blogs);
+//     console.log('this user has written the following blogs:');
+//     this.blogs.forEach(blog => {
+//       console.log(blog.title, blog.likes);
+//     })
+//   }
+// };
 
 // console.log(user.name);
 // console.log(user['name']);
@@ -483,16 +483,55 @@ let user = {
 // console.log(user.age);
 
 
-user.logBlogs();
+// user.logBlogs();
 
 
 
+// MATH OBJECT
+
+// console.log(Math.PI);
+
+
+// const area = 7.7;
+// console.log(Math.round(area)); // round to closest integer
+// console.log(Math.floor(area)); // round down
+// console.log(Math.ceil(area)); // round up
+// console.log(Math.trunc(area)); // removes integer
+
+// random numbers
+// const random = Math.random();
+// // random between 1 and 100
+// console.log(Math.round(random * 100)); // round up
 
 
 
+/* REFERENCE TYPES */
+
+// primitive values (STORED ON THE STACK)
+
+// stored once with two separate pointers below
+
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
+// if you change one, it affects only new values coming after
+scoreOne = 100;
+console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
 
 
 
+// reference values (STORED ON THE HEAP)
+
+
+let userOne = { name: 'eddie', age: 37 };
+let userTwo = userOne;
+
+console.log(userOne, userTwo);
+
+// both will change when stored on the HEAP
+userOne.age = 33;
+console.log(userOne, userTwo);
 
 
 
