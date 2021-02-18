@@ -574,10 +574,52 @@ const password = 'password1234';
 
 
 
+// const para = document.querySelector('p')
+// console.log(para.innerText);
+// para.innerText = ' JS is very sweet';
+// para.innerText += ' JS is very sweet';
+
+// const paras = document.querySelectorAll('p');
+
+// paras.forEach(para => {
+//   para.innerText += 'new stuff';
+//   console.log(para.innerText);
+// });
+
+
+// const content = document.querySelector('.content');
+
+// console.log(content.innerHTML);
+// content.innerHTML = '<h1>This is a replacement</h1>';
 
 
 
+// const people = ['eddie', 'russel', 'david', 'nadim', 'rajiv'];
 
+// people.forEach(person => {
+//   content.innerHTML += `<p>${person}</p>`;
+// });
+
+
+// const link = document.querySelector('a');
+// link.setAttribute('href', 'https://google.com');
+// console.log(link.getAttribute('href'));
+
+// const mssg = document.querySelector('p.error');
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class', 'success');
+// // mssg.setAttribute('style', 'color: green;')
+
+// const title = document.querySelector('h2');
+// // title.setAttribute('style', 'margin: 40px;');
+
+// // console.log(title.style);
+// // console.log(title.style.color);
+
+// title.style.margin = '10px';
+// title.style.color = 'crimson';
+// title.style.fontSize = '50px';
+// title.style.margin = '';
 
 
 
