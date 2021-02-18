@@ -511,29 +511,47 @@ const password = 'password1234';
 
 // stored once with two separate pointers below
 
-let scoreOne = 50;
-let scoreTwo = scoreOne;
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
 
-console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
-// if you change one, it affects only new values coming after
-scoreOne = 100;
-console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
-
-
-
-// reference values (STORED ON THE HEAP)
+// console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
+// // if you change one, it affects only new values coming after
+// scoreOne = 100;
+// console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
 
 
-let userOne = { name: 'eddie', age: 37 };
-let userTwo = userOne;
 
-console.log(userOne, userTwo);
-
-// both will change when stored on the HEAP
-userOne.age = 33;
-console.log(userOne, userTwo);
+// // reference values (STORED ON THE HEAP)
 
 
+// let userOne = { name: 'eddie', age: 37 };
+// let userTwo = userOne;
+
+// console.log(userOne, userTwo);
+
+// // both will change when stored on the HEAP
+// userOne.age = 33;
+// console.log(userOne, userTwo);
+
+
+
+
+
+
+
+
+const para = document.querySelector('body > div > p.error');
+
+// console.log(para);
+
+const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('p.error');
+console.log(paras[0]);
+console.log(errors);
+
+paras.forEach(para => {
+  // console.log(para.innerHTML);
+});
 
 
 
