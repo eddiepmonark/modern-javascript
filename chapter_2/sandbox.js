@@ -538,20 +538,47 @@ const password = 'password1234';
 
 
 
+// querySelectors
+
+// const para = document.querySelector('body > div > p.error');
+
+// // console.log(para);
+
+// const paras = document.querySelectorAll('p');
+// const errors = document.querySelectorAll('p.error');
+// console.log(paras[0]);
+// console.log(errors);
+// can use forEach here (NODE LIST)
+// paras.forEach(para => {
+//   // console.log(para.innerHTML);
+// });
 
 
-const para = document.querySelector('body > div > p.error');
+// get an element by ID
 
-// console.log(para);
+// const title = document.getElementById('page-title');
+// console.log(title);
 
-const paras = document.querySelectorAll('p');
-const errors = document.querySelectorAll('p.error');
-console.log(paras[0]);
-console.log(errors);
 
-paras.forEach(para => {
-  // console.log(para.innerHTML);
-});
+// get an element by class name
+
+// const errors = document.getElementsByClassName('error');
+// console.log(errors[0]);
+// can't use forEach here (HTML COLLECTION)
+
+
+// get an element by tag name
+// const paras = document.getElementsByTagName('p');
+// console.log(paras[1]);
+
+
+
+
+
+
+
+
+
 
 
 
