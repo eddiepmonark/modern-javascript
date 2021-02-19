@@ -611,10 +611,10 @@ const password = 'password1234';
 // // mssg.setAttribute('style', 'color: green;')
 
 // const title = document.querySelector('h2');
-// // title.setAttribute('style', 'margin: 40px;');
+// title.setAttribute('style', 'margin: 40px;');
 
-// // console.log(title.style);
-// // console.log(title.style.color);
+// console.log(title.style);
+// console.log(title.style.color);
 
 // title.style.margin = '10px';
 // title.style.color = 'crimson';
@@ -626,10 +626,41 @@ const password = 'password1234';
 
 
 
+// const content = document.querySelector('.tests');
+
+// let content = document.getElementsByClassName('.tests');
+
+let pars = document.querySelectorAll('p');
+// let pars = document.getElementsByTagName('p');
+// console.log(content.classList);
+// content.classList.remove('error');
+// content.classList.add('success');
+
+pars.forEach( p => {
+  // console.log(p.innerText);
+  console.log(p.textContent);
+  if(p.textContent.includes('error')) {
+    p.classList.add('error');
+  }
+  
+  if(p.innerText.includes('success')) {
+    p.classList.add('success');
+  }
+});
+
+const title = document.querySelector('.title');
+
+title.classList.toggle('title-big');
 
 
 
+// console.log(pars);
 
+// if (content.innerHTML === "sit") {
+//   console.log('yes');
+// } else {
+//   console.log('no');
+// }
 
 
 
